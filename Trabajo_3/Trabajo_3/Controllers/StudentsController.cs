@@ -34,5 +34,11 @@ namespace Trabajo_3.Controllers
                 NameStudent = studentName
             };
         }
+        [HttpPut]
+        public Student UpdateStudent([FromBody] Student student)
+        {
+            student.NameStudent = "updated";
+            return student;
+        }
     }
 }
