@@ -16,7 +16,11 @@ namespace Trabajo_3
     public class Startup
     {
 
+<<<<<<< HEAD
         public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
+=======
+        public Startup(IConfiguration configuration)
+>>>>>>> P3-005
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
