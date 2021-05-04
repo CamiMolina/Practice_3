@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 namespace Trabajo_3.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/api/students")]
     public class StudentsController : ControllerBase
     {
         private readonly IConfiguration _config;
