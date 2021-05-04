@@ -26,5 +26,13 @@ namespace Trabajo_3.Controllers
             new Student() { NameStudent = $"Adrian" }
             };
         }
+        [HttpPost]
+        public Student CreateStudent([FromBody] string studentName)
+        {
+            return new Student()
+            {
+                NameStudent = studentName
+            };
+        }
     }
 }
