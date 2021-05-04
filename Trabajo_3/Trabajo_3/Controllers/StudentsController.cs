@@ -20,6 +20,9 @@ namespace Trabajo_3.Controllers
         [HttpGet]
         public List<Student> GetStudent()
         {
+            string projectTitle = _config.GetSection("Project").GetSection("Title").Value;
+            string dbConnection = _config.GetConnectionString("Database");
+            Console.WriteLine($"We are connecting to...{dbConnection}");
             return new List<Student>() {
             new Student() { NameStudent = $"Daniel " },
             new Student() { NameStudent = $"Camila" },
