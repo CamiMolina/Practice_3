@@ -40,5 +40,10 @@ namespace Trabajo_3.Controllers
             student.NameStudent = "updated";
             return student;
         }
+        [HttpDelete]
+        public Student DeleteStudent([FromBody] Student student)
+        {
+            return student;
+        }
     }
 }
